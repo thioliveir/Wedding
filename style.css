@@ -34,7 +34,7 @@ ul {
 
 
 #hero {
-    background-image: url(assets/img/DSC_0019\ Grande.jpeg);
+    background-image: url(assets/img/DSC_0019\ Grande\ Média.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -156,55 +156,55 @@ ul {
             color: #fff;
 
             &:nth-child(1n) {
-                background-image: url(assets/img/CSC_0059\ Média.jpeg);
+                background-image: url(assets/img/CSC_0059\ Média\ Pequena.jpeg);
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
             }
             &:nth-child(2n) {
-                background-image: url(assets/img/DSC_0005\ Média.jpeg);
+                background-image: url(assets/img/DSC_0005\ Média\ Pequena.jpeg);
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
             }
             &:nth-child(3n) {
-                background-image: url(assets/img/DSC_0009\ Média.jpeg);
+                background-image: url(assets/img/DSC_0009\ Média\ Pequena.jpeg);
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
             }
             &:nth-child(4n) {
-                background-image: url(assets/img/DSC_0031\ Média.jpeg);
+                background-image: url(assets/img/DSC_0031\ Média\ Pequena.jpeg);
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
             }
             &:nth-child(5n) {
-                background-image: url(assets/img/DSC_0038\ Média.jpeg);
+                background-image: url(assets/img/DSC_0038\ Média\ Pequena.jpeg);
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
             }
             &:nth-child(6n) {
-                background-image: url(assets/img/DSC_0040\ Média.jpeg);
+                background-image: url(assets/img/DSC_0040\ Média\ Pequena.jpeg);
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
             }
             &:nth-child(7n) {
-                background-image: url(assets/img/DSC_0055\ Média.jpeg);
+                background-image: url(assets/img/DSC_0055\ Média\ Pequena.jpeg);
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
             }
             &:nth-child(8n) {
-                background-image: url(assets/img/IMG_7125\ Média.jpeg);
+                background-image: url(assets/img/IMG_4019\ Média\ Pequena.jpeg);
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
             }
             &:nth-child(9n) {
-                background-image: url(assets/img/IMG_4019\ Média.jpeg);
+                background-image: url(assets/img/IMG_7125\ Média\ Pequena.jpeg);
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
@@ -236,7 +236,7 @@ ul {
     }
     
     & .uber {
-        background-image: url(assets/img/uber_Média-removebg-preview.png);
+        background-image: url(assets/img/Fundo\ de\ uber_Média-removebg-preview\ Pequena\ Removido.png);
         background-size: cover;
         background-position: center;
         width: 100%;
