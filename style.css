@@ -27,6 +27,10 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style: none;
+}
+
 
 
 #hero {
@@ -77,12 +81,13 @@ a {
             
             & span {
                 font: var(--text);
-                color: #fc1d1d;
+                color: #46bcff;
                 font-weight: 900;
                 text-transform: uppercase;
             }
 
             & .circle {
+                background-color: #fc1d1d;
                 border: 1px solid #fc1d1d;
                 border-radius: 50%;
                 width: 4rem;
@@ -95,31 +100,251 @@ a {
                 & svg {
                     width: 2rem;
                     height: 2rem;
-                    fill: #fc1d1d;
+                    fill: #fff;
                 }
             }
 
             &:hover {
                 & .circle {
-                    background-color: #fc1d1d;
-                    border: 1px solid #fc1d1d;
+                    background-color: #7faeff;
+                    border: 1px solid #7faeff;
                     transition: all 0.5s;
 
                     & svg {
-                        fill: #fff;
+                        fill: black;
                         transition: all 0.5s;
                     }
-                }
-
-                & span {
-                    color: #fff;
-                    transition: all 0.5s;
                 }
             }
             
         }
     }
     
+}
+
+#album {
+    background-color: black;
+    padding-block: 2rem;
+    margin-inline: auto;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+
+    & h2 {
+        font-size: 2rem;
+        color: white;
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+    }
+
+    & swiper-container {
+        width: 240px;
+        height: 320px;
+        margin-inline: auto;
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+
+        & swiper-slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 18px;
+            font-size: 22px;
+            font-weight: bold;
+            color: #fff;
+
+            &:nth-child(1n) {
+                background-image: url(assets/img/CSC_0059\ Média.jpeg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            &:nth-child(2n) {
+                background-image: url(assets/img/DSC_0005\ Média.jpeg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            &:nth-child(3n) {
+                background-image: url(assets/img/DSC_0009\ Média.jpeg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            &:nth-child(4n) {
+                background-image: url(assets/img/DSC_0031\ Média.jpeg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            &:nth-child(5n) {
+                background-image: url(assets/img/DSC_0038\ Média.jpeg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            &:nth-child(6n) {
+                background-image: url(assets/img/DSC_0040\ Média.jpeg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            &:nth-child(7n) {
+                background-image: url(assets/img/DSC_0055\ Média.jpeg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            &:nth-child(8n) {
+                background-image: url(assets/img/IMG_7125\ Média.jpeg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            &:nth-child(9n) {
+                background-image: url(assets/img/IMG_4019\ Média.jpeg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
+}
+
+#location {
+    background-color: #f5f5f5;
+    padding-block: 2rem;
+    margin-inline: auto;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+
+    & h2 {
+        font-size: 2rem;
+        color: #6250d5;
+    }
+
+    & .box {
+        & h3 {
+            font: var(--subtitle);
+        }
+        & p {
+            font: var(--text);
+        }
+    }
+    
+    & .uber {
+        background-image: url(assets/img/uber_Média-removebg-preview.png);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 38vw;
+        position: relative;
+
+        & span {
+            font: var(--text);
+            font-size: medium;
+            color: #6250d5;
+            font-weight: 900;
+            text-transform: uppercase;
+            position: absolute;
+            right: 47px;
+            top: 55px;
+        }
+    }
+
+
+    & .map {
+        border: 1px solid black;
+        border-radius: 2rem;
+
+        & iframe {
+            border-radius: 2rem;
+        }
+
+        &:hover {
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+            transition: all 0.5s;
+        }
+    }
+}
+
+footer {
+    padding-block: 2rem;
+    display: grid;
+    place-items: center;
+    gap: 1rem;
+    background-color: #2d2e33;
+
+    & h4 {
+        font: var(--subtitle);
+        color: #f1bc0d;
+    }
+
+    & ul {
+        display: grid;
+        gap: 1rem;
+
+        & li a {
+            font: var(--text);
+            color: white;
+
+            &:hover {
+                color: #6250d5;
+                transition: all 0.5s;
+            }
+        }
+    }
+
+    .social-media {
+        display: grid;
+        justify-content: center;
+        gap: 1rem;
+
+        & h4 {
+            justify-self: center;
+        }
+
+        & .social {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+
+            & span {
+                display: inline-flex;
+                color: white;
+            }
+
+            & a {
+                display: grid;
+                place-items: center;
+                width: 2rem;
+                height: 2rem;
+                border-radius: 50%;
+                background-color: #f1bc0d;
+                color: #2d2e33;
+                font-size: 1.5rem;
+                transition: all 0.5s;
+    
+                &:hover {
+                    background-color: #6250d5;
+                    color: #f1bc0d;
+                    transition: all 0.5s;
+                }
+            }
+        }
+
+
+    }
+
+    & p {
+        font: var(--text);
+        color: white;
+    }
+    
+
 }
 
 @keyframes sliderUp {
@@ -200,11 +425,22 @@ a {
     }
 }
 
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
 @media (width >= 26.87em) {
     #hero {
     
         & .icon-wrapper {
-            padding-top: 17rem;
+            padding-top: 10.5rem;
         }
     }
 }
